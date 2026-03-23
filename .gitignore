@@ -33,3 +33,6 @@ coverage
 
 # Vite dev server
 vite.config.ts.timestamp-*
+
+# Assets
+public

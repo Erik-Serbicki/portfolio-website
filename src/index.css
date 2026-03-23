@@ -45,4 +45,104 @@
         backdrop-filter: blur(13px);
         border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
     }
+    .glass-strong{
+        background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+        backdrop-filter: blur(16px);
+        border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+    }
+    .glow-text{
+        text-shadow: 
+            0 0 5px color-mix(in srgb, var(--color-primary) 100%, transparent),
+            0 0 15px color-mix(in srgb, var(--color-primary) 75%, transparent),
+            0 0 40px color-mix(in srgb, var(--color-primary) 40%, transparent);
+    }
 } 
+
+@layer utilities{
+    @keyframes soft-drift{
+        0%,
+        100%{
+            transform: translate(0, 0);
+        }
+        25%{
+            transform: translate(20px, -30px);
+        }
+        50%{
+            transform: translate(-15px, -20px);
+        }
+        75%{
+            transform: translate(30px, 10px);
+        }
+    }
+
+    @keyframes fade-in{
+        from{
+            opacity: 0;
+            transform: translateY(10px);
+            filter: blur(10px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+
+    .animate-fade-in{
+        animation: fade-in 0.3s ease-out both;
+    }
+
+    .animation-delay-100{
+        animation-delay: 100ms;
+    }
+    .animation-delay-200{
+        animation-delay: 200ms;
+    }
+    .animation-delay-300{
+       animation-delay: 300ms;
+    }
+    .animation-delay-400{
+       animation-delay: 400ms;
+    }
+    .animation-delay-500{
+       animation-delay: 500ms;
+    }
+    .animation-delay-600{
+      animation-delay: 600ms;
+    }
+    .animation-delay-700{
+     animation-delay: 700ms;
+    }
+    .animation-delay-800{
+     animation-delay: 800ms;
+    }
+    .animation-delay-900{
+     animation-delay: 900ms;
+    }
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+    .group:hover .border-animation{
+        background: 
+            linear-gradient(white, white) padding-box,
+            conic-gradient(from var(--angle), #ff6b6b, #4ecdc4, #ff6b6b) border-box;
+        animation: rotate 1.5s linear infinite;
+    }
+
+    .animate-border:hover{
+        background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
+        border: 2px solid color-mix(in srgb, var(--color-primary) 60%, transparent);
+    }
+}
+
