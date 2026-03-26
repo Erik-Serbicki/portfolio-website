@@ -2,6 +2,26 @@ import { Button } from "@/components/Button"
 import { ArrowRight, Github, Linkedin } from "lucide-react"
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
 
+const skills = [
+    "Python",
+    "Tensorflow",
+    "Django",
+    "TypeScript",
+    "React",
+    "PostgreSQL",
+    "SQL Server",
+    "MongoDB",
+    "Docker",
+    "Git",
+    "Jira",
+    "Linux",
+    "Windows",
+    "Active Directory",
+    "Routers",
+    "Switches",
+    "Firewalls",
+]
+
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -65,6 +85,44 @@ export const Hero = () => {
                         </div>
                     </div>
                     {/*Right Column - Image*/}
+                    <div className="relative animate-fade-in animation-delay-200">
+                        {/*Profile Image*/}
+                        <div 
+                            className="absolue inset-0 rounded-3xl 
+                            bg-gradient-to-br from-primary/30 
+                            via-transparent to-primary/10 blur-2xl animate-pulse"
+                        />
+                        <div className="relative max-w-md mx-auto">
+                            <div className="relative glass rounded-3xl p-2 glow-border">
+                                <img src="me.jpg" alt="Erik Serbicki" className="w-full aspect-[4/5] object-cover rounded-2xl"/>
+                                {/*Floating Badge*/}
+                                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float ">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                                        <span className="text-sm font-medium">Available for work</span>
+                                    </div>
+                                </div>
+                                {/*Stats Badge*/}
+                                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                                   <div className="text-2xl font-bold text-primary">3+</div> 
+                                   <div className="text-xs text-muted-foreground">Years Exp.</div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*Skills Wheel*/}
+                <div className="mt-20 animate-fade-in animation-delay-600">
+                    <p className="text-sm text-muted-foreground mb-6 text-center">Technologies I work with</p>
+                    <div className="relative overflow-hidden">
+                        <div className="flex gap-8 animate-marquee">
+                            {[...skills, ...skills].map((skill, index) => (
+                                <div key={index} className="flex-shrink-0 ">
+                                    <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-all">{skill}</span>
+                                </div>  
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
