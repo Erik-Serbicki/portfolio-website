@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button"
-import { ArrowRight, Github, Linkedin } from "lucide-react"
+import { ArrowRight, Github, Linkedin, ChevronDown } from "lucide-react"
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
 
 const skills = [
@@ -124,6 +124,15 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            {/*Scroll Indicator*/}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-700">
+                <a href="#about"
+                    className="flex flex-col items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-all"
+                >
+                    <span className="text-xs uppercase tracking-wider">Scroll</span>
+                    <ChevronDown className="w-6 h-6 animate-bounce"/>
+                </a>
             </div>
         </section>
     )
