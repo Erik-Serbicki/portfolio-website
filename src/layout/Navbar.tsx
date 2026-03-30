@@ -57,11 +57,11 @@ export const Navbar = () => {
                     <div className="md:hidden glass-strong absolute top-full right-0 animate-fade-in">
                         <div className="container mx-auto flex flex-col items-center gap-4 px-6 py-2">
                             {navLinks.map((link, index) => ( 
-                                <a href={link.href} key={index} className="text-lg text-muted-foreground hover:text-primary px-4 py-2">
+                                <a href={link.href} onClick={()=>setIsMobileMenuOpen(false)} key={index} className="text-lg text-muted-foreground hover:text-primary px-4 py-2">
                                     {link.label}
                                 </a> 
                             ))}
-                            <Button >Contact Me</Button>
+                            <Button onClick={()=>setIsMobileMenuOpen(false)} >Contact Me</Button>
                         </div>
                     </div>
                 )}
