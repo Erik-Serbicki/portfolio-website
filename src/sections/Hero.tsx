@@ -126,7 +126,7 @@ export const Hero = () => {
                 </div>
             </div>
             {/*Scroll Indicator*/}
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-700">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-700">
                 <a href="#about"
                     className="flex flex-col items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-all"
                 >
