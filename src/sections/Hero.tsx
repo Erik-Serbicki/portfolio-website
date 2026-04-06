@@ -52,7 +52,7 @@ export const Hero = () => {
                     <div className="space-y-8">
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Software Engineer • Network Admin • Tennis Coach 
+                                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Project Manager • Software Engineer • Network Admin •  Tennis Coach 
                             </span>
                         </div>
                         <div className="space-y-6">
