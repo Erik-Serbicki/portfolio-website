@@ -1,6 +1,8 @@
 import { Button } from "@/components/Button"
 import { ArrowRight, Github, Linkedin, ChevronDown } from "lucide-react"
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
+import  heroImage  from "@/assets/Hero/hero-pic.jpg"
+import  bgImage  from "@/assets/bg-crack.png"
 
 const skills = [
     "Python",
@@ -27,7 +29,7 @@ export const Hero = () => {
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/*BG*/}
             <div className="absolute inset-0">
-                <img src="/bg-cracks.png" alt="Background Image" className="w-full h-full object-cover opacity-30" />
+                <img src={bgImage} alt="Background Image" className="w-full h-full object-cover opacity-30" />
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background/40" />
             </div>
 
@@ -94,7 +96,7 @@ export const Hero = () => {
                         />
                         <div className="relative max-w-md mx-auto">
                             <div className="relative glass rounded-3xl p-2 glow-border">
-                                <img src="me.jpg" alt="Erik Serbicki" className="w-full aspect-[4/5] object-cover rounded-2xl"/>
+                                <img src={heroImage} alt="Erik Serbicki" className="w-full aspect-[4/5] object-cover rounded-2xl"/>
                                 {/*Floating Badge*/}
                                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float ">
                                     <div className="flex items-center gap-3">

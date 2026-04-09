@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react"
+import project1 from "@/assets/projects/project1.png"
 
 const projects = [
     {
         title: "HomeLab",
         description: "My homelab includes a Proxmox node, Synology NAS, traefik reverse proxy, and a host of docker based services. Many of these compose files, along with my ansible setup to automate deployment and maintenence of my servers, are on my Github page.",
-        image: "/projects/project1.png",
+        image: project1,
         tags: ["Networking", "Docker", "Hypervisors"],
         link: "https://github.com/Erik-Serbicki",
     },
