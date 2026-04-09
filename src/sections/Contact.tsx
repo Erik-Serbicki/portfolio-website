@@ -34,15 +34,15 @@ export const Contact = () => {
     const [isLoading, setIsLoading] = useState(false)
 
     const [submitStatus, setSubmitStatus] = useState({
-        type: null,
+        type: "",
         message: "",
     })
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
        e.preventDefault() 
 
        setIsLoading(true)
-       setSubmitStatus({type: null, message: ""})
+       setSubmitStatus({type: "none", message: ""})
 
        try {
            const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID

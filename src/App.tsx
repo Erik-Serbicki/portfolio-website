@@ -1,4 +1,4 @@
-import {Hero} from "@/sections/Hero.tsx" 
+import {Hero} from "src/sections/Hero.tsx" 
 import {About} from "@/sections/About.tsx" 
 import {Experience} from "@/sections/Experience.tsx" 
 import {Contact} from "@/sections/Contact.tsx" 

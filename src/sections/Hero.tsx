@@ -34,7 +34,7 @@ export const Hero = () => {
             {/* Green Dots */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 {[...Array(30)].map((_, index) => (
-                    <div className="absolute w-2 h-2 rounded-full opacity-60" 
+                    <div key={index} className="absolute w-2 h-2 rounded-full opacity-60" 
                         style={{
                             backgroundColor: "#20B2A6", // Light Sea Green
                             top: `${Math.random() * 100}%`,

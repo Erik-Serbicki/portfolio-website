@@ -27,7 +27,13 @@
     /* Type Declarations */
     "declaration": true,
     "declarationDir": "./dist/types",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }

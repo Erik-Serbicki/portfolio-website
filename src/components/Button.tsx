@@ -1,6 +1,12 @@
+import type { ReactNode } from "react"
 
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    children?: ReactNode
+    className?: string
+    size?: "sm" | "default" | "lg"
+}
 
-export const Button = ({className="", size="default", children, ...props}) => {
+export const Button = ({className="", size="default", children, ...props}: Props) => {
 
     const baseClasses = "relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/80 shadow-lg shadow-primary/25" 
 
