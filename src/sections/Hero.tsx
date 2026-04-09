@@ -2,7 +2,7 @@ import { Button } from "@/components/Button"
 import { ArrowRight, Github, Linkedin, ChevronDown } from "lucide-react"
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
 import  heroImage  from "@/assets/Hero/hero-pic.jpg"
-import  bgImage  from "@/assets/bg-crack.png"
+import  bgImage  from "@/assets/bg-cracks.png"
 
 const skills = [
     "Python",
