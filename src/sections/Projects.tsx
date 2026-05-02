@@ -1,10 +1,25 @@
 import { ArrowUpRight } from "lucide-react"
 import project1 from "@/assets/projects/project1.png"
+import project2 from "@/assets/projects/project2.png"
 
 const projects = [
     {
+        title: "RDS Reciever",
+        description: "A program built using Python to recieve, demodulate, frequency shift, resample, sychronize, and decode RDS data from an FM radio signal. This prgoram would work with an SDR device, but I tested it with with a recorded signal of IQ samples. I built this project to learn more about digital signal processing and software defined radio.",
+        image: project2,
+        tags: ["Python", "Software Defined Radio", "QPSK/BPSK", "Digital Signal Processing"],
+        link: "https://github.com/Erik-Serbicki",
+    },
+    {
         title: "HomeLab",
         description: "My homelab includes a Proxmox node, Synology NAS, traefik reverse proxy, and a host of docker based services. Many of these compose files, along with my ansible setup to automate deployment and maintenence of my servers, are on my Github page.",
+        image: project1,
+        tags: ["Networking", "Docker", "Hypervisors"],
+        link: "https://github.com/Erik-Serbicki",
+    },
+    {
+        title: "NoteForm",
+        description: "",
         image: project1,
         tags: ["Networking", "Docker", "Hypervisors"],
         link: "https://github.com/Erik-Serbicki",
