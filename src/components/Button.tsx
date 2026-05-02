@@ -13,14 +13,14 @@ export const Button = ({className="", size="default", children, ...props}: Props
     const sizeClasses = {
         sm: "px-3 py-1.5 text-sm",
         default: "px-4 py-2 text-base",
-        lg: "px-5 py-3 text-lg",
+        lg: "px-6 py-3 text-lg",
     }
 
     const classes = `${baseClasses} ${sizeClasses[size]} ${className}`
 
     return (
         <button className={classes} {...props}>
-            <span className="relative flex items-center justify-center gap-2">
+            <span className="relative flex flex-row items-center justify-center gap-2">
                 {children}
             </span>
         </button>

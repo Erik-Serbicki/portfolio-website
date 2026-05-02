@@ -29,7 +29,7 @@ export const Hero = () => {
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/*BG*/}
             <div className="absolute inset-0">
-                <img src={bgImage} alt="Background Image" className="w-full h-full object-cover opacity-30" />
+                { /*<img src={bgImage} alt="Background Image" className="w-full h-full object-cover opacity-30" /> */}
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background/40" />
             </div>
 
@@ -38,7 +38,7 @@ export const Hero = () => {
                 {[...Array(30)].map((_, index) => (
                     <div key={index} className="absolute w-2 h-2 rounded-full opacity-60" 
                         style={{
-                            backgroundColor: "#20B2A6", // Light Sea Green
+                            backgroundColor: "#9E302E", // Light Sea Green
                             top: `${Math.random() * 100}%`,
                             left: `${Math.random() * 100}%`,
                             animation: `soft-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
@@ -70,7 +70,7 @@ export const Hero = () => {
                         </div>
                         {/*CTAs*/}
                         <div className="flex relative items-center z-10 justify-center gap-3 animate-fade-in animation-delay-300">
-                            <Button size="lg">Contact Me <ArrowRight className="w-5 h-5"/> </Button>
+                            <Button size="lg"><a href="#contact">Contact Me</a> <ArrowRight className="w-5 h-5"/></Button>
                             <AnimatedBorderButton />
                         </div>
                         {/*Social Links*/}
