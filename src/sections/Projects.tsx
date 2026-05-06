@@ -1,6 +1,8 @@
 import { ArrowUpRight } from "lucide-react"
 import project1 from "@/assets/projects/project1.png"
 import project2 from "@/assets/projects/project2.png"
+import project3 from "@/assets/projects/project3.png"
+import project4 from "@/assets/projects/project4.jpg"
 
 const projects = [
     {
@@ -19,9 +21,16 @@ const projects = [
     },
     {
         title: "NoteForm",
-        description: "",
-        image: project1,
-        tags: ["Networking", "Docker", "Hypervisors"],
+        description: "Project Lead, developed the workflow and architecture for piano playing assistant app. Uses mediapipe on a python server in the backend, with a clean Flutter built frontend. Runs pose detection on a live video, providing feedback and tracking progress.",
+        image: project3,
+        tags: ["Python", "AndroidStudio", "AI Pose Detection"],
+        link: "https://github.com/Erik-Serbicki",
+    },
+    {
+        title: "FPGA Switch Display",
+        description: "First FPGA project, built with SystemVerilog on a Nexys A7-100T. Simply lights up one of the 16 LEDs if the corresponding switch is on. Famialirzed myself with Vivado, FPGA architecture, Synthezing and Implementing a design, and programming a device.",
+        image: project4,
+        tags: ["SystemVerilog", "Vivado", "FPGA Design"],
         link: "https://github.com/Erik-Serbicki",
     },
 ]
